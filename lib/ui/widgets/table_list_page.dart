@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_estados3/blocs/counter_table_bloc.dart';
 
 class TableWidget extends StatelessWidget {
-  const TableWidget({super.key, required this.counterTableBloc});
-  final CounterTableBloc counterTableBloc;
+  const TableWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
+  CounterTableBloc counterTableBloc = CounterTableBloc();
 
     return ListView.builder(
       itemCount: counterTableBloc.counter,
